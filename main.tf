@@ -34,7 +34,7 @@ resource "azurerm_container_group" "tfcg_test" {
   os_type         = "Linux"
 
   container {
-    name   = "weatherapi"
+    name   = var.containername
     image  = "smartin43592/weatherapi:${var.imagebuild}"
     cpu    = "1"
     memory = "1"
