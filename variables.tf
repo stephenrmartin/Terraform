@@ -1,0 +1,3 @@
+variable "containername" {
+    type= string
+}
